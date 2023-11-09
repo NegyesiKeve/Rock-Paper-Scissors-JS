@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockpaperscissors</title>
+    <link rel="stylesheet" type="text/css" href="./rockpaperscissors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="titlewrapper">
+                <img src="./assets/images/logo.svg" alt="titleimage" id="originaltitleimage" />
+                <img src="./assets/images/logo-bonus.svg" alt="titleimage" id="bonustitleimage" />
+            </div>
+            <div class="scorewrapper">
+                <div class="scoretitle">SCORE</div>
+                <div class="scorecounter">--</div>
+            </div>
+        </div>
+        <div class="gridholder">
+            <div class="rpspicker">
+                <div class="originalrps">
+                    <div class="trianglecont">
+                        <img src="../rockpaperscissors/assets/images/bg-triangle.svg" alt="triangleicon"
+                            id="triangleicon">
+                    </div>
+                    <div class="rockcont" id="originalrock">
+                        <div class="rockouterring"></div>
+                        <div class="background"></div>
+                        <div class="sign">
+                            <img src="../rockpaperscissors/assets/images/icon-rock.svg" alt="rockicon" id="rockicon">
+                        </div>
+                    </div>
+                    <div class="papercont">
+                        <div class="paperouterring"></div>
+                        <div class="background"></div>
+                        <div class="sign">
+                            <img src="../rockpaperscissors/assets/images/icon-paper.svg" alt="papericon" id="papericon">
+                        </div>
+                    </div>
+                    <div class="scissorscont">
+                        <div class="scissorsouterring"></div>
+                        <div class="background"></div>
+                        <div class="sign">
+                            <img src="../rockpaperscissors/assets/images/icon-scissors.svg" alt="scissorsicon"
+                                id="scissorsicon">
+                        </div>
+                    </div>
+                </div>
+                <div class="bonusrps">
+                    <div class="pentagoncont">
+                        <img src="../rockpaperscissors/assets/images/bg-pentagon.svg" alt="pentagonicon"
+                            id="pentagonicon">
+                    </div>
+                    <div class="bonusrockcont">
+                        <div class="rockcont">
+                            <div class="rockouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-rock.svg" alt="rockicon"
+                                    id="rockicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bonuspapercont">
+                        <div class="papercont">
+                            <div class="paperouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-paper.svg" alt="papericon"
+                                    id="papericon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bonusscissorscont">
+                        <div class="scissorscont">
+                            <div class="scissorsouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-scissors.svg" alt="scissorsicon"
+                                    id="scissorsicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lizardcont">
+                        <div class="lizardouterring"></div>
+                        <div class="background"></div>
+                        <div class="sign">
+                            <img src="../rockpaperscissors/assets/images/icon-lizard.svg" alt="lizardicon"
+                                id="lizardicon">
+                        </div>
+                    </div>
+                    <div class="spockcont">
+                        <div class="spockouterring"></div>
+                        <div class="background"></div>
+                        <div class="sign">
+                            <img src="../rockpaperscissors/assets/images/icon-spock.svg" alt="spockicon" id="spockicon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="displaypicked">
+                <div class="playerchoicewrapper">
+                    <div class="youpicked">YOU PICKED</div>
+                    <div class="playerchoice">
+                        <div class="rockcont">
+                            <div class="rockouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-rock.svg" alt="rockicon"
+                                    id="rockicon">
+                            </div>
+                        </div>
+                        <div class="papercont">
+                            <div class="paperouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-paper.svg" alt="papericon"
+                                    id="papericon">
+                            </div>
+                        </div>
+                        <div class="scissorscont">
+                            <div class="scissorsouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-scissors.svg" alt="scissorsicon"
+                                    id="scissorsicon">
+                            </div>
+                        </div>
+                        <div class="lizardcont">
+                            <div class="lizardouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-lizard.svg" alt="lizardicon"
+                                    id="lizardicon">
+                            </div>
+                        </div>
+                        <div class="spockcont">
+                            <div class="spockouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-spock.svg" alt="spockicon"
+                                    id="spockicon">
+                            </div>
+                        </div>
+                        <div class="resultindicator1"></div>
+                        <div class="resultindicator2"></div>
+                        <div class="resultindicator3"></div>
+                    </div>
+                </div>
+                <div class="resultcontainer">
+                    <div class="resultwrapper">
+                        <div class="result"></div>
+                        <div class="playagainwrapper">
+                            <button type="button" class="playagainbutton">PLAY AGAIN</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="housechoicewrapper">
+                    <div class="thehousepicked">THE HOUSE PICKED</div>
+                    <div class="housechoice">
+                        <div class="houseemptycont">
+                            <div class="houseemptybackground"></div>
+                        </div>
+                        <div class="rockcont">
+                            <div class="rockouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-rock.svg" alt="rockicon"
+                                    id="rockicon">
+                            </div>
+                        </div>
+                        <div class="papercont">
+                            <div class="paperouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-paper.svg" alt="papericon"
+                                    id="papericon">
+                            </div>
+                        </div>
+                        <div class="scissorscont">
+                            <div class="scissorsouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-scissors.svg" alt="scissorsicon"
+                                    id="scissorsicon">
+                            </div>
+                        </div>
+                        <div class="lizardcont">
+                            <div class="lizardouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-lizard.svg" alt="lizardicon"
+                                    id="lizardicon">
+                            </div>
+                        </div>
+                        <div class="spockcont">
+                            <div class="spockouterring"></div>
+                            <div class="background"></div>
+                            <div class="sign">
+                                <img src="../rockpaperscissors/assets/images/icon-spock.svg" alt="spockicon"
+                                    id="spockicon">
+                            </div>
+                        </div>
+                        <div class="resultindicator1"></div>
+                        <div class="resultindicator2"></div>
+                        <div class="resultindicator3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttoncontainer">
+                <div class="changemodewrapper">
+                    <button type="button" class="changemodebutton">--</button>
+                </div>
+                <div class="ruleswrapper">
+                    <button type="button" class="rulesbutton">RULES</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobileresultscontainer">
+            <div class="mobileresultwrapper">
+                <div class="mobileresult"></div>
+                <div class="mobileplayagainwrapper">
+                    <button type="button" class="mobileplayagainbutton">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobilebuttoncontainer">
+            <div class="changemodewrapper">
+                <button type="button" class="changemodebutton">--</button>
+            </div>
+            <div class="ruleswrapper">
+                <button type="button" class="rulesbutton">RULES</button>
+            </div>
+        </div>
+    </div>
+    <div class="rulesbackdrop"></div>
+    <div class="rulescont">
+        <div class="basicruleswrapper">
+            <div class="rulesheader">
+                <div class="rulestitle">RULES</div>
+                <div class="rulesclose">
+                    <img src="../rockpaperscissors/assets/images/icon-close.svg" alt="iconcloase" class="rulesclosebtn">
+                </div>
+            </div>
+            <div class="basicrules">
+                <img src="../rockpaperscissors/assets/images/image-rules.svg" alt="basicrules" id="basicrulesimage">
+                <img src="../rockpaperscissors/assets/images/image-rules-bonus.svg" alt="bonusrules"
+                    id="bonusrulesimage">
+            </div>
+            <div class="mobilerulesclose">
+                <img src="../rockpaperscissors/assets/images/icon-close.svg" alt="iconcloase" class="rulesclosebtn">
+            </div>
+        </div>
+    </div>
+    <script src="./rockpaperscissors.js"></script>
+</body>
+
+</html>
